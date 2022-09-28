@@ -4,18 +4,49 @@
 
 {% block body %}
 {% include 'menu.html.twig' %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/theramtl/src/Controller/MorevideosController.php'|file_link(0) }}">src/Controller/MorevideosController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/theramtl/templates/morevideos/index.html.twig'|file_link(0) }}">templates/morevideos/index.html.twig</a></code></li>
-    </ul>
-</div>
+<article class="container text-center text-light p-4" style="background-color:#757575;">
+    <h1>Más videos</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card text-bg-warning" style="width: 18rem;">
+                <img src="{{ asset('build/images/109408-erbfd-article_m-1.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CALL OF DUTY: WORLD AT WAR </h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-bg-warning" style="width: 18rem;">
+                <img src="{{ asset('build/images/i5l1jLAhFSTiO7lSCNDWjJ2J.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CALL OF DUTY: MODERN WARFARE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-bg-warning" style="width: 18rem;">
+                <img src="{{ asset('build/images/metal-gear-solid.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">METAL GEAR SOLID SNAKE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-bg-warning" style="width: 18rem;">
+                <img src="{{ asset('build/images/metal-gear-solid-2-sons-liberty-2532317.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">METAL GEAR SOLID 2: SONS OF LIBERTY</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
 {% endblock %}
