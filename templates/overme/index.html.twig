@@ -1,21 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello OvermeController!{% endblock %}
+{% block title %}TheRAMTL - Sobre de mí{% endblock %}
 
 {% block body %}
 {% include 'menu.html.twig' %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/theramtl/src/Controller/OvermeController.php'|file_link(0) }}">src/Controller/OvermeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/theramtl/templates/overme/index.html.twig'|file_link(0) }}">templates/overme/index.html.twig</a></code></li>
-    </ul>
-</div>
+<article class="container text-center text-light" style="background-color:#757575;">
+    <h1>Sobre de mí</h1>
+    <div class="row">
+        <div class="col-12">¡Bienvenido/as a mi canal de TheRAMTL!<br/>Toda mi vida siempre he tenido una gran afición por los videos juegos. Me encanta jugar y rierme así que decidí hacer un canal y compartirlo con el mundo. Si os apetece ya sabéis donde encontrarme.<br/>Soy una persona sorda y entre otros contenidos. Agradezco vuestra comprensión, también podéis mandar apoyo con vídeos, donde yo los pueda ver y así pasar las etapas de este magnifico juego. Esperamos que disfrutes del canal y gracias por el apoyo.</div>
+        <div class="col-12" style="height:650px;">
+        <iframe style="overflow:hidden; height:100%; width:100%; top: 0; left: 0; bottom: 0; right: 0;" height="100%" width="100%" src="https://www.youtube.com/embed/Qx9VlSU3soQ?controls=0&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</article>
 {% endblock %}
