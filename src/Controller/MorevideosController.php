@@ -13,7 +13,7 @@ class MorevideosController extends AbstractController
     public function index(JuegosvideosRepository $juegosvideosRepository): Response
     {
         return $this->render('morevideos/index.html.twig', [
-            'juegosvideos' => $juegosvideosRepository->findAll(),
+            'juegosvideos' => $juegosvideosRepository->findBy(array(), array('id'=>'DESC')),
         ]);
     }
 }
