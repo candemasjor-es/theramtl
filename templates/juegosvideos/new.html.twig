@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Juegosvideos{% endblock %}
+
+{% block body %}
+    <h1>Create new Juegosvideos</h1>
+
+    {{ include('juegosvideos/_form.html.twig') }}
+
+    <a href="{{ path('app_juegosvideos_index') }}">back to list</a>
+{% endblock %}

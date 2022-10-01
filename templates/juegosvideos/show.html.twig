@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Juegosvideos{% endblock %}
+
+{% block body %}
+    <h1>Juegosvideos</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ juegosvideo.id }}</td>
+            </tr>
+            <tr>
+                <th>Destacadas</th>
+                <td>{{ juegosvideo.destacadas }}</td>
+            </tr>
+            <tr>
+                <th>Titulos</th>
+                <td>{{ juegosvideo.titulos }}</td>
+            </tr>
+            <tr>
+                <th>Textos</th>
+                <td>{{ juegosvideo.textos }}</td>
+            </tr>
+            <tr>
+                <th>Boton</th>
+                <td>{{ juegosvideo.boton }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_juegosvideos_index') }}">back to list</a>
+
+    <a href="{{ path('app_juegosvideos_edit', {'id': juegosvideo.id}) }}">edit</a>
+
+    {{ include('juegosvideos/_delete_form.html.twig') }}
+{% endblock %}
