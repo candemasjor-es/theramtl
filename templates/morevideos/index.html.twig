@@ -7,126 +7,20 @@
 <article class="container text-center text-light p-4" style="background-color:#757575;">
     <h1>Más videos</h1>
     <div class="row">
+    {% for juegosvideo in juegosvideos %}
         <div class="col m-1">
             <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/109408-erbfd-article_m-1.png') }}" class="card-img-top" alt="...">
+                <img src={{ juegosvideo.destacadas }} class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">CALL OF DUTY: WORLD AT WAR </h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title" style="text-transform: uppercase;">{{ juegosvideo.titulos }}</h5>
+                    <p class="card-text">{{ juegosvideo.textos }}</p>
+                    <a href={{ juegosvideo.boton }} class="btn btn-primary">Videos</a>
                 </div>
             </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/i5l1jLAhFSTiO7lSCNDWjJ2J.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">CALL OF DUTY: MODERN WARFARE</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/metal-gear-solid.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">METAL GEAR SOLID SNAKE</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/metal-gear-solid-2-sons-liberty-2532317.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">METAL GEAR SOLID 2: SONS OF LIBERTY</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/CODMW.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">CALL OF DUTY 4: Modern Warfare</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/CODMW2.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">CALL OF DUTY 4: Modern Warfare 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/WW2.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">CALL OF DUTY: World At War 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/NFSMW.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">Need For Speed Most Wanted</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/beyond-two-souls.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">Need For Speed Most Wanted</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/CODBO1.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">Need For Speed Most Wanted</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/CODBO2.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">Need For Speed Most Wanted</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col m-1">
-            <div class="card text-bg-warning" style="width: 18rem;">
-                <img src="{{ asset('build/images/Heavy-Rain.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="text-transform: uppercase;">Need For Speed Most Wanted</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        </div> 
+    {% else %}
+    <h1>No se encontraron registros</h1>
+    {% endfor %}       
     </div>
 </article>
 {% endblock %}
