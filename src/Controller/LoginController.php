@@ -19,4 +19,9 @@ class LoginController extends AbstractController
             'error'         => $error,
         ]);
     }
+    #[Route(path: '/logout', name: 'app_logout')]
+    public function logout(): void
+    {
+        throw new \LogicException('Este método puede estar en blanco: será interceptado por la clave de cierre de sesión en su firewall.');
+    }
 }
