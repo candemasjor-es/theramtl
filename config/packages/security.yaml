@@ -21,6 +21,8 @@ security:
                 check_path: app_login
                 default_target_path: app_profile
                 always_use_default_target_path: true
+            logout:
+                path: app_logout
         secured_area:
             form_login:
                 enable_csrf: true
@@ -36,6 +38,7 @@ security:
     access_control:
          - { path: ^/admin, roles: ROLE_ADMIN }
          - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/juegosvideos, roles: ROLE_USER }
 
 when@test:
     security:
